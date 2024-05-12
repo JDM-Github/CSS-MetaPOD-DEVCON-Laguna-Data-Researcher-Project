@@ -1,0 +1,31 @@
+{
+  "name": "css-metapod-devcon-laguna-data-researcher-project",
+  "version": "1.0.0",
+  "description": "CSS MetaPOD DEVCON Laguna Data Researcher Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDM-Github/CSS-MetaPOD-DEVCON-Laguna-Data-Researcher-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JDM-Github/CSS-MetaPOD-DEVCON-Laguna-Data-Researcher-Project/issues"
+  },
+  "homepage": "https://github.com/JDM-Github/CSS-MetaPOD-DEVCON-Laguna-Data-Researcher-Project#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
