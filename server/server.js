@@ -6,7 +6,7 @@ const port = 5000;
 const dbConfig = {
 	host: 'localhost',
 	user: 'root',
-	password: 'root',
+	password: 'Cryptopsy081603',
 	database: 'WaisDatabase'
 };
 

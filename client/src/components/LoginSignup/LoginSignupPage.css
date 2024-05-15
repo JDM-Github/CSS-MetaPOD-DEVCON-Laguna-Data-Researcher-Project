@@ -1,0 +1,10 @@
+.mainContainer {
+    background: #fbfcf8;
+    font-family: 'Roboto Slab';
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }

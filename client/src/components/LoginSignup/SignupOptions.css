@@ -1,0 +1,29 @@
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+  }
+  
+  .buttons button {
+    width: 140px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #221f1f;
+    background-image: linear-gradient(to right, #221f1f, #221f1f);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    background-size: 200% 100%;
+    background-position: 0%;
+    transition: background-position 0.5s ease, transform 0.5s ease;
+  }
+  
+  .buttons button:hover {
+    background-image: linear-gradient(to right, #98fb98, #50C878);
+    transform: scale(1.1);
+    background-position: -100%;
+    color: #221f1f;
+  }

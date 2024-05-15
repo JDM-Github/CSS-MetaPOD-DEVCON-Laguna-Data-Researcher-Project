@@ -1,0 +1,151 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 180px;
+    border-radius: 40px;
+    width: 600px;
+    background: #50C878;
+    padding-bottom: 30px;
+    transition: transform 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.container.slide-right {
+    transform: translateX(100%);
+    margin-top: 0;
+    height: 100vh; 
+    justify-content: center;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.backButton { 
+    position: absolute;
+    margin-top: 15px;
+    left: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #202020;
+    font-size: 64px; 
+    cursor: pointer;
+    transition: transform 0.5s ease, left 0.5s ease;
+    pointer-events: auto; 
+}
+
+.container.slide-right .backButton{
+    left: -1050px;
+    bottom: -400px;
+    pointer-events: none;
+    font-family: 'Roboto Slab';
+    font-size: 250px;
+}
+
+.backButton:hover{
+    transform: scale(1.2);
+}
+
+.text{
+    color: #202020;
+    font-size: 38px;
+    font-weight: 700;
+    margin-top: 15px;
+    transition: margin-top 0.5s ease-in-out;
+}
+
+.text.slide-right {
+    margin-top: -40px;
+}
+
+.underline {
+    width: 161px;
+    height: 6px;
+    background: #202020;
+    border-radius: 9px;
+}
+
+.underlineSymbol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: margin-top 0.5s ease-in-out;
+}
+
+.inputs.slide-right {
+    margin-top: 85px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    background: #eaeaea;
+    border-radius: 6px;
+}
+
+.input img{
+    margin: 0px 30px;
+}
+
+.orgIcon {
+    width: 28px;
+    height: 28px;
+}
+
+.input input{
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #202020;
+    font-size: 19px;
+}
+
+
+.submit-container {
+    display: flex;
+    gap: 30px;
+    margin: 50px auto;
+    transition: margin-top 0.5s ease-in-out;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color: #fff;
+    background: #202020;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-container.slide-right {
+    margin-top: 95px;
+}
+
+.Login {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}

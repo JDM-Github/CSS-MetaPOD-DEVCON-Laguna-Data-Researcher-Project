@@ -1,8 +1,11 @@
 import React, {useState, useEffect} from 'react'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './WAISMainApplication.css';
 
 // Import component Example
-import Test from "./components/Test.tsx"
+import LoginSignupPage from './components/pages/LoginSignupPage.jsx';
+import OrgRegistrationPage from './components/pages/OrgRegistrationPage.jsx';
+import UserRegistrationPage from './components/pages/UserRegistrationPage.jsx';
 
 // Use the function I create for the handling  Request
 import handleRequest from './functions/handleRequest'
@@ -35,8 +38,15 @@ function WAISMainApplication()
 		});
 	}, []);
 
+	
 	return (
-		<div>HAHA</div>
+		<Router>
+      		<Routes>
+        		<Route path="/" element={<LoginSignupPage />} />
+        		<Route path="/OrgRegistrationPage" element={<OrgRegistrationPage />} />
+        		<Route path="/UserRegistrationPage" element={<UserRegistrationPage />} />
+      		</Routes>
+    </Router>
 	);
 }
 
