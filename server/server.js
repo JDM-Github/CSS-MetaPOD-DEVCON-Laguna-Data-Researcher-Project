@@ -38,15 +38,14 @@ class MainBackend
 
 	initializeRoutes()
 	{
-		this.app.get('/api', (req, res) => {
+		this.app.get('/', (req, res) => {
 			let id = req.query.id;
 			if (!id || isNaN(id))
 			{
     			id = 1;
   			}
-
 			this.connection.query(`SELECT * FROM testTable WHERE id = ${id}`, (err, results) => {
-				if (err) throw err;
+				if (err) throw err;-aqwq2`1`	
 				console.log(`Data retrieved from testTable WHERE id = ${id}`);
 				res.json(results);
 			});
@@ -58,6 +57,12 @@ class MainBackend
 			console.log(name);
 			res.json({ message: 'Data received successfully' });
 		});
+
+		this.app.post('/api/create-user', (req, res) =>
+		{
+			res.json({ message: 'Data received successfully' });
+		});
+
 	}
 
 	initializeSQL()
