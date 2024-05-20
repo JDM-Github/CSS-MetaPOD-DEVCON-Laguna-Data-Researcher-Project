@@ -6,6 +6,7 @@ import './WAISMainApplication.css';
 import LoginSignupPage from './components/pages/LoginSignupPage.jsx';
 import OrgRegistrationPage from './components/pages/OrgRegistrationPage.jsx';
 import UserRegistrationPage from './components/pages/UserRegistrationPage.jsx';
+import UserPage from './components/pages/UserPage.jsx';
 
 // Use the function I create for the handling  Request
 import handleRequest from './functions/handleRequest'
@@ -42,9 +43,10 @@ function WAISMainApplication()
 	return (
 		<Router>
       		<Routes>
-        		<Route path="/" element={<LoginSignupPage />} />
+				<Route path="/" element={<UserPage />} />
+        		{/* <Route path="/" element={<LoginSignupPage />} />
         		<Route path="/OrgRegistrationPage" element={<OrgRegistrationPage />} />
-        		<Route path="/UserRegistrationPage" element={<UserRegistrationPage />} />
+        		<Route path="/UserRegistrationPage" element={<UserRegistrationPage />} /> */}
       		</Routes>
     </Router>
 	);

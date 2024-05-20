@@ -1,0 +1,43 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.userPageContainer {
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "wallet wallet investment leaderboard"
+    "wallet wallet investment leaderboard"
+    "projects projects projects leaderboard"
+    "projects projects projects leaderboard"
+    "projects projects projects leaderboard"
+    "projects projects projects leaderboard"
+    "projects projects projects leaderboard"
+    "projects projects projects leaderboard";
+    gap: 15px;
+}
+
+.headerContainer {
+    grid-area: header;
+    margin: 10px 10px;
+}
+
+.userWalletContainer {
+    grid-area: wallet;
+    margin: 10px 10px;
+}
+
+.userInvestment {
+    grid-area: investment;
+    margin: 10px 10px;
+}
+
+.orgLeaderboard {
+    grid-area: leaderboard;
+    margin: 10px 10px;
+}
+
+.projectActivities {
+    grid-area: projects;
+    margin: 10px 10px;
+}

@@ -1,0 +1,120 @@
+.userWalletContainer {
+    width: 900px;
+    background:#0D313D;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    border-radius: 25px;
+    padding: 20px;
+    color: #fff;
+}
+
+.myWalletText {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 10px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.investmentFundsText {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 65px;
+    margin-left: 10px;
+    color: #28FFCB;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.investment {
+    font-size: 34px;
+    font-weight: 400;
+    margin-top: 85px;
+    margin-left: 10px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.walletText {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 80px;
+    margin-left: 10px;
+    color: #28FFCB;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.amount {
+    font-size: 38px;
+    font-weight: 700;
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.topUpContainer {
+    padding: 10px;
+    width: 400px;
+    height: 50px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    margin-top: 75px;
+    margin-left: 10px;
+    background: #FFFFFF2B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.coinIconsContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.peso {
+    justify-self: center;
+    position:absolute;
+    left: 40px;
+}
+
+.topupText {
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.profitTextContainer {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 55px;
+    margin-right: 20px;
+    text-align: right;
+    color: #28FFCB;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.profitTextContainer .profitRate {
+    font-weight: 700;
+}
+
+.profitAmount {
+    font-size: 34px;
+    font-weight: 400;
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 85px;
+    margin-left: 180px;
+}
+
+.incOrDec {
+    font-size: 32px;
+    font-weight: 700;
+}

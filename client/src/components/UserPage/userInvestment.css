@@ -1,0 +1,57 @@
+.userInvestment {
+    background: #0D313D;
+    display: grid;
+    width: 350px;
+    height: 350px; 
+    grid-template-columns: 350px;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    border-radius: 25px;
+    color: #fff; 
+}
+
+.myInvestmentsText {
+    font-size: 28px;
+    font-weight: 700;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.active {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 120px;
+    font-weight: 700;
+}
+
+.activeText {
+    font-size: 28px;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 160px;
+    margin-left: 30px;
+}
+
+.investmentBottomContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.completed{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.investmentBottomContainer .seeMoreText {
+    font-size: 1.1em;
+    font-weight: 400;
+}
